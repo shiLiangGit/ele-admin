@@ -1,0 +1,71 @@
+$el-menu-bg: #15202f;
+$hover-menu-bg: #45689c;
+$active-color: #20a0ff;
+$submenu__title-color: #294469;
+//element-ui 导航菜单样式设置
+.el-menu--inline .el-menu-item {
+  background-color: $el-menu-bg !important;
+}
+
+.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active,
+.el-menu-item.is-active {
+  color: $active-color;
+}
+
+.el-menu-item:hover {
+  background-color: $submenu__title-color !important;
+}
+
+.el-submenu__title:hover {
+  background-color: $submenu__title-color !important;
+}
+
+//element-ui 表格样式设置
+.el-table thead {
+  color: #000 !important;
+}
+.el-table th>.cell{
+  text-align: center;
+}
+
+.el-table td, .el-table th{
+  text-align: center;
+}
+.el-table td form, .el-table th form{
+  text-align: left;
+}
+.el-table__expanded-cell{
+  background: #fbfdff;
+  box-shadow: inset 0 2px 0 #dddddd!important;
+}
+.demo-table-expand {
+  font-size: 0;
+}
+.demo-table-expand label {
+  width: 90px;
+  color: #99a9bf;
+}
+.demo-table-expand .el-form-item {
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 50%;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
