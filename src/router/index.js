@@ -3,12 +3,16 @@ import Router from 'vue-router'
 import Login from '@/pages/login';
 import Index from '@/pages/index';
 import Home from '@/pages/home';
-import UserList from '@/pages/userList';
-import ShopList from '@/pages/shopList';
-import OrderList from '@/pages/orderList';
-import FoodList from '@/pages/foodList';
-import AdminList from '@/pages/adminList';
-Vue.use(Router)
+// 数据管理
+import UserList from '@/pages/dataManage/userList';
+import ShopList from '@/pages/dataManage/shopList';
+import OrderList from '@/pages/dataManage/orderList';
+import FoodList from '@/pages/dataManage/foodList';
+import AdminList from '@/pages/dataManage/adminList';
+// 添加数据
+import AddGood from '@/pages/addData/addGood';
+import AddShop from '@/pages/addData/addShop';
+Vue.use(Router);
 
 export default new Router({
     routes: [
@@ -57,7 +61,19 @@ export default new Router({
                     name:'adminList',
                     component:AdminList,
                     meta:['数据管理','管理员列表']
-                }
+                },
+                {
+                    path:'addShop',
+                    name:'addShop',
+                    component:AddShop,
+                    meta:['添加数据','添加商铺']
+                },
+                {
+                    path:'addGood',
+                    name:'addGood',
+                    component:AddGood,
+                    meta:['添加数据','添加商品']
+                },
             ]
         },
 

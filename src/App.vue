@@ -11,7 +11,8 @@ export default {
 </script>
 
 <style>
-
+  @import "./assets/css/main.scss";
+  @import "./assets/css/patch.scss";
 #app {
   height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
